@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from "next/legacy/image";
 import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
@@ -29,7 +29,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-          <section className="h-screen">
+          <section>
             <nav className='py-10 mb-12 flex justify-between'>
               <h1 className='text-xl font-burtons dark:text-gray-300'>Bruno Possiedi</h1>
               <ul className='flex item-center'>
@@ -49,79 +49,41 @@ export default function Home() {
             </div>
 
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800 dark:text-white'>
-              <AiFillYoutube/>
-              <AiFillLinkedin/>
-              <AiFillTwitterCircle />
+              <a href="https://www.linkedin.com/in/brunopossiedi/"><AiFillLinkedin/></a>
+              <a href='https://github.com/brunooaps'><AiFillGithub/></a>
             </div>
 
-            <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+            {/* <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
               <Image src={deved} layout="fill" objectFit="cover"/>
-            </div>
+            </div> */}
           </section>
 
           <section>
             <div>
-              <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
+              <h3 className='text-3xl py-1 dark:text-white'>Sobre mim</h3>
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>Eu sou um desenvolvedor web com 3 anos de experiência em programação, especializado em PHP Laravel, ReactJS e VueJS. Além disso, atualmente estou estudando Engenharia de Software para aprimorar meus conhecimentos na área. Meu objetivo é criar soluções inovadoras e eficientes que atendam às necessidades dos usuários finais, aplicando as melhores práticas de desenvolvimento e trabalhando em equipe para alcançar resultados de alta qualidade. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
             </div>
-            <div className='lg:flex gap-10'>
+            <div className='lg:flex justify-center gap-10'>
               <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600'>
-                <Image src={design} width={100} height={100}/>
-                <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-                <p className='py-2 dark:text-gray-300'>bla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab la</p>
-                <h4 className='py-4 text-teal-600 dark:text-teal-200'>Design tools I use</h4>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Illustrator</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Figma</p>
+                <Image src={code} width={100} height={100}/>
+                <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Fullstack development</h3>
+                <p className='py-2 dark:text-gray-300 w-96'>Durante 1 ano fiz um projeto de gestão de usuários para o Hospital Pequeno Príncipe, onde o intúito era buscar e inserir dados nos bancos de dados PostgreSQL da instituição.</p>
+                <h4 className='py-4 text-teal-600 dark:text-teal-200'>Ferramentas utilizadas</h4>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>Laravel</p>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>React-Admin</p>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>Git</p>
               </div>
               <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600'>
                 <Image src={code} width={100} height={100}/>
-                <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-                <p className='py-2 dark:text-gray-300'>bla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab la</p>
-                <h4 className='py-4 text-teal-600 dark:text-teal-200'>Design tools I use</h4>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Illustrator</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Figma</p>
-              </div>
-              <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:shadow-gray-600'>
-                <Image src={consulting} width={100} height={100}/>
-                <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
-                <p className='py-2 dark:text-gray-300'>bla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab labla bla bla blab la</p>
-                <h4 className='py-4 text-teal-600 dark:text-teal-200'>Design tools I use</h4>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Photoshop</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Illustrator</p>
-                <p className='text-gray-800 py-1 dark:text-gray-400'>Figma</p>
+                <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Front-end development</h3>
+                <p className='py-2 dark:text-gray-300 w-96'>Participei de um projeto para fazer um ecommerce junto com varios outros desenvolvedores.</p>
+                <h4 className='py-4 text-teal-600 dark:text-teal-200'>Ferramentas utilizadas</h4>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>Laravel</p>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>VueJS</p>
+                <p className='text-gray-800 py-1 dark:text-gray-400'>Git</p>
               </div>
             </div>
           </section>
-
-          <section>
-            <div>
-              <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
-              <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>Eu sou um desenvolvedor web com 3 anos de experiência em programação, especializado em PHP Laravel, ReactJS e VueJS. Além disso, atualmente estou estudando Engenharia de Software para aprimorar meus conhecimentos na área. Meu objetivo é criar soluções inovadoras e eficientes que atendam às necessidades dos usuários finais, aplicando as melhores práticas de desenvolvimento e trabalhando em equipe para alcançar resultados de alta qualidade. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
-            </div>
-            <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-            </div>
-          </section>
-
         </main>
       </div>
     </>
